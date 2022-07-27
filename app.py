@@ -30,7 +30,7 @@ def predict():
     new_data = np.array(list(data)).reshape(1,-1)
     scaled_data = scaler.transform(new_data)
     output = model.predict(scaled_data)
-    return render_template('home.html', prediction_text = f"House Prediction is: {output[0]}")
+    return render_template('home.html', prediction_text = f"House Price Prediction is: {output[0]}")
 
 
 
